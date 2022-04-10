@@ -16,7 +16,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 							let response = await fetch(`${store.URL_BASE}/${endPoint}`);
 							if (response.ok){
 								let data = await response.json();
-								data.results.map(async (item, index)=>{
+								data.results.map(async (item)=>{
 									let responseTwo = await fetch(`${store.URL_BASE}/${endPoint}/${item.uid}`)
 									let result = await responseTwo.json();
 									setStore({
