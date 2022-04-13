@@ -1,22 +1,35 @@
 import React from "react";
 import "../../styles/card.css";
+import { useContext } from "react";
+import { Context } from "../store/appContext.js";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 export const Card = ({ nature, item }) => {
-	return (
+	
+	const {actions} = useContext(Context)
+	const [favorite, setFavorite] = useState(false)
 
+	return (
+		
 		<>
 			{nature == "people" ? (
 				<div className="card">
 					<img src="https://via.placeholder.com/400x200" />
 					<div className="card-body">
 						<h5 className="card-title py-2">{item.properties.name}</h5>
-						<h6 className="card-text">Gender: {item.properties.gender}</h6>
-						<h6 className="card-text">Hair Color: {item.properties.hair_color}</h6>
-						<h6 className="card-text">Eye Color: {item.properties.eye_color}</h6>
+						<h6 className="card-text"><b>Gender:</b> {item.properties.gender}</h6>
+						<h6 className="card-text"><b>Hair Color:</b> {item.properties.hair_color}</h6>
+						<h6 className="card-text"><b>Eye Color:</b> {item.properties.eye_color}</h6>
 						<div className="d-flex justify-content-between">
-							<button type="button" className="btn btn-primary">Learn more!</button>
-							<button type="button" className="btn btn-warning">Fav</button>
+							<Link to={`people/${item.uid}`} className="btn btn-primary">
+								Learn more!
+							</Link>
+							<button type="button" className="btn btn-warning" onClick={() => {
+								actions.addFavorites(item.properties.name)
+								setFavorite(true)
+							}}>Fav</button>
 						</div>
 					</div>
 				</div>
@@ -27,12 +40,16 @@ export const Card = ({ nature, item }) => {
 					<img src="https://via.placeholder.com/400x200" />
 					<div className="card-body">
 						<h5 className="card-title py-2">{item.properties.name}</h5>
-						<h6 className="card-text">Population: {item.properties.population}</h6>
-						<h6 className="card-text">Terrain: {item.properties.terrain}</h6>
-						<h6 className="card-text">Climate: {item.properties.climate}</h6>
+						<h6 className="card-text"><b>Population:</b> {item.properties.population}</h6>
+						<h6 className="card-text"><b>Terrain:</b> {item.properties.terrain}</h6>
+						<h6 className="card-text"><b>Climate:</b> {item.properties.climate}</h6>
 						<div className="d-flex justify-content-between">
-							<button type="button" className="btn btn-primary">Learn more!</button>
-							<button type="button" className="btn btn-warning">Fav</button>
+						<Link to={`planets/${item.uid}`} className="btn btn-primary">Learn more!
+						</Link>
+							<button type="button" className="btn btn-warning" onClick={() => {
+								actions.addFavorites(item.properties.name)
+								setFavorite(true)
+							}}>Fav</button>
 						</div>
 					</div>
 				</div>
@@ -43,12 +60,16 @@ export const Card = ({ nature, item }) => {
 						<img src="https://via.placeholder.com/400x200" />
 						<div className="card-body">
 							<h5 className="card-title py-2">{item.properties.name}</h5>
-							<h6 className="card-text">Model: {item.properties.model}</h6>
-							<h6 className="card-text">Manufacturer: {item.properties.manufacturer}</h6>
-							<h6 className="card-text">Vehicle Class: {item.properties.vehicle_class}</h6>
+							<h6 className="card-text"><b>Model:</b> {item.properties.model}</h6>
+							<h6 className="card-text"><b>Manufacturer:</b> {item.properties.manufacturer}</h6>
+							<h6 className="card-text"><b>Vehicle Class:</b> {item.properties.vehicle_class}</h6>
 							<div className="d-flex justify-content-between">
-								<button type="button" className="btn btn-primary">Learn more!</button>
-								<button type="button" className="btn btn-warning">Fav</button>
+							<Link to={`vehicles/${item.uid}`} className="btn btn-primary">Learn more!
+							</Link>
+								<button type="button" className="btn btn-warning" onClick={() => {
+								actions.addFavorites(item.properties.name)
+								setFavorite(true)
+							}}>Fav</button>
 							</div>
 						</div>
 					</div>
