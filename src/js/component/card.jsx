@@ -4,6 +4,8 @@ import { useContext } from "react";
 import { Context } from "../store/appContext.js";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faHeart} from '@fortawesome/free-solid-svg-icons'
 
 
 export const Card = ({ nature, item }) => {
@@ -23,13 +25,13 @@ export const Card = ({ nature, item }) => {
 						<h6 className="card-text"><b>Hair Color:</b> {item.properties.hair_color}</h6>
 						<h6 className="card-text"><b>Eye Color:</b> {item.properties.eye_color}</h6>
 						<div className="d-flex justify-content-between">
-							<Link to={`people/${item.uid}`} className="btn btn-primary">
+							<Link to={`people/${item.uid}`} className="btn btn-outline-primary">
 								Learn more!
 							</Link>
-							<button type="button" className="btn btn-warning" onClick={() => {
+							<button type="button" className="btn btn-outline-warning" onClick={() => {
 								actions.addFavorites(item.properties.name)
 								setFavorite(true)
-							}}>Fav</button>
+							}}><FontAwesomeIcon icon={faHeart} /></button>
 						</div>
 					</div>
 				</div>
@@ -44,12 +46,12 @@ export const Card = ({ nature, item }) => {
 						<h6 className="card-text"><b>Terrain:</b> {item.properties.terrain}</h6>
 						<h6 className="card-text"><b>Climate:</b> {item.properties.climate}</h6>
 						<div className="d-flex justify-content-between">
-						<Link to={`planets/${item.uid}`} className="btn btn-primary">Learn more!
+						<Link to={`planets/${item.uid}`} className="btn btn-outline-primary">Learn more!
 						</Link>
-							<button type="button" className="btn btn-warning" onClick={() => {
+							<button type="button" className="btn btn-outline-warning" onClick={() => {
 								actions.addFavorites(item.properties.name)
 								setFavorite(true)
-							}}>Fav</button>
+							}}><FontAwesomeIcon icon={faHeart} /></button>
 						</div>
 					</div>
 				</div>
@@ -64,12 +66,12 @@ export const Card = ({ nature, item }) => {
 							<h6 className="card-text"><b>Manufacturer:</b> {item.properties.manufacturer}</h6>
 							<h6 className="card-text"><b>Vehicle Class:</b> {item.properties.vehicle_class}</h6>
 							<div className="d-flex justify-content-between">
-							<Link to={`vehicles/${item.uid}`} className="btn btn-primary">Learn more!
+							<Link to={`vehicles/${item.uid}`} className="btn btn-outline-primary">Learn more!
 							</Link>
-								<button type="button" className="btn btn-warning" onClick={() => {
+								<button type="button" className="btn btn-outline-warning" onClick={() => {
 								actions.addFavorites(item.properties.name)
 								setFavorite(true)
-							}}>Fav</button>
+							}}><FontAwesomeIcon icon={faHeart} /></button>
 							</div>
 						</div>
 					</div>

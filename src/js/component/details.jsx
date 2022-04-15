@@ -37,30 +37,30 @@ export const Details = () => {
                             </div>
                         </div>
                         <div className="text text-center p-4">
-                            <h2 className="title">Card title</h2>
+                            <h2 className="title">{info.properties?.name}</h2>
                             <p className="description fs-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum deserunt debitis harum doloribus? Laboriosam incidunt placeat ipsum tempore recusandae? Officia maxime enim iusto alias a nesciunt quisquam dolores veniam illo!</p>
                         </div>
                     </div>
                     <div className="container2 d-flex border-top border-danger border-2">
                         <div className="details d-flex pt-4">
-                            <h4 className="px-5 text-danger">Name
-                                <h5 className="pt-2 text-danger">{info.properties?.name}</h5>
-                            </h4>
-                            <h4 className="px-5 text-danger">Birth Year
-                                <h5 className="pt-2 text-danger">Nombre</h5>
-                            </h4>
-                            <h4 className="px-5 text-danger">Gender
-                                <h5 className="pt-2 text-danger">Nombre</h5>
-                            </h4>
-                            <h4 className="px-5 text-danger">Height
-                                <h5 className="pt-2 text-danger">Nombre</h5>
-                            </h4>
-                            <h4 className="px-5 text-danger">Skin Color
-                                <h5 className="pt-2 text-danger">Nombre</h5>
-                            </h4>
-                            <h4 className="px-5 text-danger">Eye Color
-                                <h5 className="pt-2 text-danger">Nombre</h5>
-                            </h4>
+                            <h5 className="px-5 text-danger">Name:
+                                <p className="pt-2 text-danger">{info.properties?.name}</p>
+                            </h5>
+                            <h5 className="px-5 text-danger">Birth Year:
+                                <p className="pt-2 text-danger">{info.properties?.birth_year}</p>
+                            </h5>
+                            <h5 className="px-5 text-danger">Gender:
+                                <p className="pt-2 text-danger">{info.properties?.gender}</p>
+                            </h5>
+                            <h5 className="px-5 text-danger">Height:
+                                <p className="pt-2 text-danger">{info.properties?.height}</p>
+                            </h5>
+                            <h5 className="px-5 text-danger">Skin Color:
+                                <p className="pt-2 text-danger">{info.properties?.skin_color}</p>
+                            </h5>
+                            <h5 className="px-5 text-danger">Eye Color:
+                                <p className="pt-2 text-danger">{info.properties?.eye_color}</p>
+                            </h5>
                         </div>
                     </div>
                 </div>
@@ -75,30 +75,30 @@ export const Details = () => {
                             </div>
                         </div>
                         <div className="text text-center p-4">
-                            <h2 className="title">Card title</h2>
+                            <h2 className="title">{info.properties?.name}</h2>
                             <p className="description fs-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum deserunt debitis harum doloribus? Laboriosam incidunt placeat ipsum tempore recusandae? Officia maxime enim iusto alias a nesciunt quisquam dolores veniam illo!</p>
                         </div>
                     </div>
                     <div className="container2 d-flex border-top border-danger border-2">
                         <div className="details d-flex pt-4">
-                            <h4 className="px-5 text-danger">Planeta
-                                <h5 className="pt-2 text-danger">{info.properties?.name}</h5>
-                            </h4>
-                            <h4 className="px-5 text-danger">Birth Year
-                                <h5 className="pt-2 text-danger">Nombre</h5>
-                            </h4>
-                            <h4 className="px-5 text-danger">Gender
-                                <h5 className="pt-2 text-danger">Nombre</h5>
-                            </h4>
-                            <h4 className="px-5 text-danger">Height
-                                <h5 className="pt-2 text-danger">Nombre</h5>
-                            </h4>
-                            <h4 className="px-5 text-danger">Skin Color
-                                <h5 className="pt-2 text-danger">Nombre</h5>
-                            </h4>
-                            <h4 className="px-5 text-danger">Eye Color
-                                <h5 className="pt-2 text-danger">Nombre</h5>
-                            </h4>
+                            <h5 className="px-5 text-danger">Name:
+                                <p className="pt-2 text-danger">{info.properties?.name}</p>
+                            </h5>
+                            <h5 className="px-5 text-danger">Climate:
+                                <p className="pt-2 text-danger">{info.properties?.climate}</p>
+                            </h5>
+                            <h5 className="px-5 text-danger">Population:
+                                <p className="pt-2 text-danger">{info.properties?.population}</p>
+                            </h5>
+                            <h5 className="px-5 text-danger">Orbital Period:
+                                <p className="pt-2 text-danger">{info.properties?.orbital_period}</p>
+                            </h5>
+                            <h5 className="px-5 text-danger">Rotation Period:
+                                <p className="pt-2 text-danger">{info.properties?.rotation_period}</p>
+                            </h5>
+                            <h5 className="px-5 text-danger">Diameter
+                                <p className="pt-2 text-danger">{info.properties?.diameter}</p>
+                            </h5>
                         </div>
                     </div>
                 </div>
@@ -113,30 +113,30 @@ export const Details = () => {
                             </div>
                         </div>
                         <div className="text text-center p-4">
-                            <h2 className="title">Card title</h2>
+                            <h2 className="title">{info.properties?.name}</h2>
                             <p className="description fs-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum deserunt debitis harum doloribus? Laboriosam incidunt placeat ipsum tempore recusandae? Officia maxime enim iusto alias a nesciunt quisquam dolores veniam illo!</p>
                         </div>
                     </div>
                     <div className="container2 d-flex border-top border-danger border-2">
                         <div className="details d-flex pt-4">
-                            <h4 className="px-5 text-danger">Name
-                                <h5 className="pt-2 text-danger">{info.properties?.name}</h5>
-                            </h4>
-                            <h4 className="px-5 text-danger">Birth Year
-                                <h5 className="pt-2 text-danger">Nombre</h5>
-                            </h4>
-                            <h4 className="px-5 text-danger">Gender
-                                <h5 className="pt-2 text-danger">Nombre</h5>
-                            </h4>
-                            <h4 className="px-5 text-danger">Height
-                                <h5 className="pt-2 text-danger">Nombre</h5>
-                            </h4>
-                            <h4 className="px-5 text-danger">Skin Color
-                                <h5 className="pt-2 text-danger">Nombre</h5>
-                            </h4>
-                            <h4 className="px-5 text-danger">Eye Color
-                                <h5 className="pt-2 text-danger">Nombre</h5>
-                            </h4>
+                            <h5 className="px-5 text-danger">Name:
+                                <p className="pt-2 text-danger">{info.properties?.name}</p>
+                            </h5>
+                            <h5 className="px-5 text-danger">Model:
+                                <p className="pt-2 text-danger">{info.properties?.model}</p>
+                            </h5>
+                            <h5 className="px-5 text-danger">Manufacturer:
+                                <p className="pt-2 text-danger">{info.properties?.manufacturer}</p>
+                            </h5>
+                            <h5 className="px-5 text-danger">Vehicle Class:
+                                <p className="pt-2 text-danger">{info.properties?.vehicle_class}</p>
+                            </h5>
+                            <h5 className="px-5 text-danger">Crew:
+                                <p className="pt-2 text-danger">{info.properties?.crew}</p>
+                            </h5>
+                            <h5 className="px-5 text-danger">Consumables:
+                                <p className="pt-2 text-danger">{info.properties?.consumables}</p>
+                            </h5>
                         </div>
                     </div>
                 </div>
