@@ -14,6 +14,7 @@ export const Navbar = () => {
 				<img src="https://www.picng.com/upload/star_wars_logo/png_star_wars_logo_65410.png" alt="" width="20%" heigh="auto" />
 			</Link>
 			<div className="ml-auto">
+				{store.token.length > 0 ?
 				<div className="dropdown">
 					<button className="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
 						Favorites {store.favorites.length}
@@ -23,7 +24,12 @@ export const Navbar = () => {
 							<li key={index}><span className="dropdown-item d-flex justify-content-between align-items-center">{item}<button type="button" className="btn" onClick={() => { actions.deleteFavs(index) }}><i className="fas fa-trash"></i></button></span></li>
 						))}
 					</ul>
-				</div>
+				</div> : (
+					<>
+					<Link to="/login" className="btn btn-primary"> Login </Link>
+					<button type="button" className="btn btn-primary"> Register </button>
+					</>
+				)}
 			</div>
 		</nav>
 	);
